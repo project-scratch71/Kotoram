@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: black;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* ПАРОЛЬ */
+#login {
+  text-align: center;
+  margin-top: 150px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#error {
+  color: red;
+}
+
+/* СКРЫТИЕ */
+.hidden {
+  display: none;
+}
+
+/* ЗАГОЛОВОК */
+.title {
+  text-align: center;
+  position: absolute;
+  top: 30px;
+  width: 100%;
+}
+
+/* ГАЛЕРЕЯ */
+#gallery {
+  margin-top: 200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  padding: 20px;
+}
+
+#gallery img {
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+#gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* ЗВЁЗДЫ */
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
